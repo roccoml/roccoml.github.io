@@ -1,5 +1,90 @@
+@media only screen and (min-width: 701px) {
+
 body {
     margin: 0;
+  }
+.nav{
+  display:grid;
+}
+  
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    background-color: #ffffff;
+  }
+
+ h1{
+    color:#BBDD00;
+    font-style:italic;
+    font-weight: bold;
+    text-align: center;
+    font-size:50px;
+    margin-top: -100px;
+ 
+ }
+
+ img{
+   width:40%;
+   height:40%;
+   padding:10px;
+   float:right;
+   border: 1px solid red;
+
+}
+
+ h2 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight:bold;
+    color:#FFEB00;
+  }
+
+hr{
+border-top: 1px solid blue;
+}
+
+ul{
+  font-size:15px;
+  text-align: center;
+  list-style:none;
+  font-family:monospace;
+  padding:10px;
+  border: 1px solid red;
+  background-color: blue;
+  width:100px;
+  margin-top:-10px;
+  border-radius:100%;
+  padding-bottom:15px;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+p{
+ font-size:14px;
+}
+
+
+} 
+
+@media screen and (max-width: 700px) {
+
+  body {
+    margin: 0;
+  }
+
+  .nav{
+    flex-direction: column;
   }
   
 html {
@@ -12,50 +97,69 @@ html {
     color:#BBDD00;
     font-style:italic;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     font-size:50px;
-    margin-top: -80px;
-    padding:0px 100px 0px 0px;
+    margin-top: -10px;
+
+  
  }
+ hr{
+margin-top:-25px;
+  border-top: 1px solid blue;
+  }
+
+ img{
+   width:40%;
+   height:40%;
+   padding:10px;
+  text-align:center;
+   border: 1px solid red;
+  
+   
+}
 
  h2 {
     font-size: 25px;
     font-style: italic;
     font-weight:bold;
     color:#FFEB00;
-    margin-top:-100px;
+   
   }
 
-img{
-  object-fit: cover;
-   height: 100px;
-   width:100px;
-   padding:10px;
-   border: 1px solid red;
-}
+
 
 ul{
-position:relative;
- right:-110px;
- top:-140px;
- 
-}
+  font-size:15px;
+  text-align: center;
+  list-style:none;
+  font-family:monospace;
+  padding:10px;
+  border: 1px solid red;
+  background-color: blue;
+  width:100px;
+margin-top:-10px;
+  border-radius:100%;
+  padding-bottom:15px;
 
-hr{
-border-top: 1px solid blue;
 }
 
 a:link{
-    color:black;
+    color:white;
+    text-decoration: none;
 }
 
 a:visited {
-    color: red;
+    color:white;
 }
 
 a:hover {
-    color: #FFEB00;
+    color: yellow;
 }
+
 p{
  font-size:14px;
+ 
+}
+
+
 }
