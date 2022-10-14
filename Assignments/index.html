@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Silly story generator</title>
+
+    <style>
+
+      @media only screen and (min-width: 701px) {
+
+      body {
+          margin: 0;
+          font-family:monospace;
+        }
+
+      .navbar{
+        border-bottom: 1px blue solid;
+        width:100%;
+      }
+        
+      html {
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 1em;
+          background-color: #ffffff;
+          overflow:hidden;
+        }
+
+      .content{
+        width:100%;
+        margin-top:-10px;
+      }
+
+      .intro{
+        width:70%;
+        float:left;
+      }
+
+      .introimg{
+        width:30%;
+        float:right;
+
+      }
+
+      .name{
+          color:#BBDD00;
+          font-family: Arial, Helvetica, sans-serif;
+          font-style:italic;
+          font-weight: bold;
+          text-align:right;
+          font-size:50px;
+          margin-top:-90px;
+        width:80%;
+        float:right;
+      }
+
+      .navv{
+        display:flex;
+        width:20%;
+      }
+
+      .nav{
+        font-size:15px;
+        text-align: center;
+        list-style:none;
+        font-family:monospace;
+        padding:10px;
+        border: 1px solid red;
+        background-color: blue;
+        width:80px;
+        margin-top:-5px;
+        border-radius:100%;
+        padding-bottom:15px;
+
+      }
+
+      .pic{
+        width:90%;
+        height:90%;
+        border: 1px solid red;
+        padding:10px;
+        float:right;
+        margin-right:-3px;
+
+      }
+      
+      h2 {
+          font-size: 25px;
+          font-style: italic;
+          font-weight:bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color:#FFEB00;
+        }
+
+      a:link{
+          color:white;
+          text-decoration: none;
+          background-color:blue;
+      }
+
+      a:visited {
+          color:white;
+      }
+
+      a:hover {
+          color: yellow;
+      }
+
+      p{
+      font-size:14px;
+      }
+
+      .resume{
+        display:flex;
+        justify-content: center;
+        overflow:scroll;
+        height:600px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-top: 1px solid red;
+      }
+
+      .res{
+      height:1000px;
+      width:700px;
+      }
+
+      .row-1{
+        display:flex;
+        width:100%;
+        margin-top:-20px;
+      }
+
+      .col-1{
+        width:50%;
+      }
+
+      .col-2{
+        width:50%;
+        float:right;
+        display:grid;
+        grid-template-columns: 5fr 1fr;
+
+      }
+
+      .tar1, .tar2, .tar3, .tar4, .rue1, .rue2, .rue3, .rue4, .spy1, .spy2, .jans, .croc, .nob, .mag {
+        width:100%;
+        height:100%;
+      
+      }
+
+      .photos{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        list-style:none;
+        gap:1px;
+        border:1px solid red;
+        padding:5px;
+        width:110%;
+        overflow:scroll;
+        height:10%;
+        margin-left:10px;
+      }
+
+      .mail{
+        width:40px;
+        height:30px
+      }
+
+      .ig{
+        width:40px;
+        height:40px;
+      }
+
+      .li{
+        width:40px;
+        height:40px;
+      }
+
+      .icons{
+        text-align:center ;
+        padding:5px;
+
+      }
+
+      } 
+
+      @media screen and (max-width: 700px) {
+
+        body {
+          margin: 0;
+          font-family:monospace;
+        }
+
+        .navbar{
+          width:100%;
+          position:sticky;
+          top:0;
+          position:fixed;
+          background-color:white;
+          height:23.5%;
+          margin-left:-15px;
+          border-bottom: 1px blue solid;
+        }
+
+
+      html {
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 1em;
+          background-color: #ffffff;
+        }
+
+        .content{
+          width:100%;
+          margin-top:-10px;
+          flex-direction:column-reverse;
+          display:flex;
+        }
+        
+        .intro{
+          width:100%;
+          float:left;
+        }
+        
+        .introimg{
+          width:100%;
+          float:right;
+        }
+        
+        .name{
+            color:#BBDD00;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style:italic;
+            font-weight: bold;
+            text-align:center;
+            font-size:50px;
+            width:100%;
+            margin-top:-10px;
+
+            padding-bottom:10px;
+        }
+        
+        .navv{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top:10px;
+        }
+        
+        .nav{
+          font-size:15px;
+          text-align: center;
+          list-style:none;
+          font-family:monospace;
+          padding:10px;
+          border: 1px solid red;
+          background-color: blue;
+          width:80px;
+          margin-top:-5px;
+          border-radius:100%;
+          padding-bottom:15px;
+          margin-left:-10px;
+
+        }
+        
+
+      .pic{
+        width:30%;
+        height:30%;
+        margin-right:35%;
+        border: 1px solid red;
+        padding:10px;
+        float:right;
+        margin-top:-10px;
+      }
+      
+        h2 {
+          font-size: 25px;
+          font-style: italic;
+          font-weight:bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color:#FFEB00;
+          margin-top:180px;
+        }
+      
+
+
+      a:link{
+          color:white;
+          text-decoration: none;
+          background-color:blue;
+      }
+
+      a:visited {
+          color:white;
+      }
+
+      a:hover {
+          color: yellow;
+      }
+
+      p{
+      font-size:14px;
+
+      }
+
+      .resume{
+        display:flex;
+        justify-content: center;
+        height:500px;
+        border-top: 1px solid red;
+      }
+
+      .res{
+      height:150%;
+      width:100%;
+      }
+
+      .row-1{
+        flex-direction: column;
+        width:100%;
+      }
+
+      .col-1{
+        text-align: center;
+      }
+
+      .col-2{
+        float:right;
+        display:grid;
+        grid-template-columns: 5fr 1fr;
+
+      }
+
+      .tar1, .tar2, .tar3, .tar4, .rue1, .rue2, .rue3, .rue4, .spy1, .spy2, .jans, .croc, .nob, .mag {
+        width:100%;
+        height:100%;
+      
+      }
+
+      .photos{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        list-style:none;
+        gap:2px;
+        border:1px solid red;
+        padding:5px;
+        width:115%;
+        height:100%;
+      }
+
+      .mail{
+        width:40px;
+        height:30px
+      }
+
+      .ig{
+        width:40px;
+        height:40px;
+      }
+
+      .li{
+        width:40px;
+        height:40px;
+      }
+
+      .icons{
+        text-align:center ;
+        padding:5px;
+
+      }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="">
+    </div>
+    <div>
+      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+    
+<script src="../Assignments/main.js"></script> 
+  
+  </body>
+</html>
