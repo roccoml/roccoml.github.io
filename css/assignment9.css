@@ -4,11 +4,13 @@ h1 {
     color:#BBDD00;
     font-style:italic;
     font-weight: bold;
+    font-size:50px;
   }
 
   body {
     width: 650px;
     margin: 0 auto;
+    background-color:blue;
   }
   
   .full-img {
