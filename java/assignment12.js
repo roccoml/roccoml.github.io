@@ -1,5 +1,7 @@
 function randomNumber1() {
+  document.getElementById('one').readOnly = true;
     document.getElementById('one').value = Random();
+
 }
 
   function Random() {
@@ -9,6 +11,7 @@ function randomNumber1() {
 
 function randomNumber2() {
     document.getElementById('two').value = Random2();
+    document.getElementById('two').readOnly = true;
 }
 
   function Random2() {
