@@ -1,0 +1,15 @@
+body{
+    text-align:center;
+    margin-top:50px;
+}
+
+h1{
+    color:#BBDD00;
+}
+
+.button1, .button2{
+    background-color:blue;
+    color:white;
+    border: 1px solid red;
+}
+
