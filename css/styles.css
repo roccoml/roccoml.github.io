@@ -80,7 +80,7 @@ margin-bottom:40px;
  .nav{
   display:flex;
   justify-content:space-between;
-  width:70%;
+  width:65%;
   margin-left:-34px;
 }
 .frame{
@@ -280,10 +280,10 @@ button:hover{
     top:0;
     position:fixed;
     background-color:white;
-    height:20%;
+    height:19%;
     margin-left:-15px;
     border-bottom: 1px blue solid;
-  padding-bottom:5px;
+    padding-bottom:2px;
   }
 
 
@@ -318,7 +318,7 @@ html {
       text-align:center;
       font-size:40px;
       width:100%;
-    margin-top:5px;
+    margin-top:1px;
   
    }
   
@@ -363,7 +363,7 @@ html {
      font-weight:bold;
      font-family: Arial, Helvetica, sans-serif;
      color:#FFEB00;
-    margin-top:150px;
+    margin-top:140px;
    }
  
 
